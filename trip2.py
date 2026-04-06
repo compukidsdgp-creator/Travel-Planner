@@ -6,7 +6,9 @@ import folium
 from streamlit_folium import st_folium
 
 # ---------------- CONFIG ----------------
-genai.configure(api_key=geminikey)
+api_key = st.secrets["GEMINI_API_KEY"]
+genai.configure(api_key=api_key)
+mapkey=st.secrets["GOOGLE_API_KEY"]
 GOOGLE_API_KEY = mapkey
 
 model = genai.GenerativeModel("gemini-2.5-flash")

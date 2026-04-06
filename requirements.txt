@@ -1,6 +1,6 @@
 streamlit
 requests
-genai
+google.generativeai
 geopy
 folium
 streamlit_folium

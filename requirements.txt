@@ -1,0 +1,6 @@
+streamlit
+requests
+genai
+geopy
+folium
+streamlit_folium

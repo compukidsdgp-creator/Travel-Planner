@@ -8,8 +8,7 @@ from streamlit_folium import st_folium
 # ---------------- CONFIG ----------------
 api_key = st.secrets["GEMINI_API_KEY"]
 genai.configure(api_key=api_key)
-mapkey=st.secrets["GOOGLE_API_KEY"]
-GOOGLE_API_KEY = mapkey
+GOOGLE_API_KEY = st.secrets["GOOGLE_MAP_API_KEY"]
 
 model = genai.GenerativeModel("gemini-2.5-flash")
 
